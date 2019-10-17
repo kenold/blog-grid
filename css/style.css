@@ -104,6 +104,6 @@ img {
   .card {
     height: 180px; }
     .card__title {
-      max-width: 50%; }
+      max-width: 85%; }
   .card--overlay--wide {
     height: 130px; } }
