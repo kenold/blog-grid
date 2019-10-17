@@ -2,7 +2,7 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif; }
 
 .wrapper {
-  max-width: 1020px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 1rem; }
 
@@ -114,8 +114,8 @@ img {
     grid-template-rows: 1fr 2rem 1fr;
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p2 p3" "p4 p5 p6 p6"; }
   .card {
-    height: 180px; }
+    height: 250px; }
     .card__title {
       max-width: 85%; }
   .card--overlay--wide {
-    height: 130px; } }
+    height: 200px; } }
