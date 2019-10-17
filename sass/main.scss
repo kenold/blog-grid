@@ -6,6 +6,19 @@ body {
     margin: 0 auto;
     padding: 1rem;
 }
+a {
+    color: rgb(13, 94, 151);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.main__footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 24px;
+}
 img {
     width: 100%;
 }
