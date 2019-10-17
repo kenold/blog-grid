@@ -1,7 +1,26 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 .wrapper {
-    max-width: 900px;
+    max-width: 1020px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 1rem;
+}
+img {
+    width: 100%;
+}
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .875rem;
+}
+.btn--white {
+    color: #444;
+    background-color: #fff;
 }
 .cards {
     display: grid;
@@ -17,40 +36,85 @@
 .card {
     color: #fff;
     background-color: #6FABA7;
-    padding: 2rem;
+    padding: 4rem 2rem;
+    position: relative;
+    border-radius: 10px;
+    height: 150px;
     &__image {
-        order: 2;
         img {
-            max-width: 100px;
+            // max-width: 200px;
+            display: none;
         }
     }
-    &__content {
-        order: 1;
+    &__header {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    &__title {
+        font-size: 1.5rem;
+        padding-top: .75rem;
+        line-height: 28px;
+    }
+    &__topic {
+        font-size: .875rem;
+        color: #eee;
+        text-transform: uppercase;
+    }
+    &__footer {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin-top: auto;
     }
 }
-
+.card--overlay--wide {
+    height: 100px;
+    .card {
+        &__image {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(-50%, -50%);
+        }
+        &__title {
+            max-width: 70%;
+        }
+    }
+}
 .post-1 {
     grid-area: p1;
+    background: rgb(111,170,167);
+    background: linear-gradient(90deg, rgba(111,170,167,1) 33%, rgba(214,227,227,1) 72%);
 }
 
 .post-2 {
     grid-area: p2;
+    background-color: #172532;
 }
 
 .post-3 {
     grid-area: p3;
+    background: rgb(191,151,121);
+    background: linear-gradient(180deg, rgba(191,151,121,1) 33%, rgba(235,208,185,1) 72%);
 }
 
 .post-4 {
     grid-area: p4;
+    background: rgb(102,187,210);
+    background: linear-gradient(180deg, rgba(102,187,210,1) 33%, rgba(188,222,234,1) 72%);
 }
 
 .post-5 {
     grid-area: p5;
+    background: rgb(252,186,190);
+    background: linear-gradient(180deg, rgba(252,186,190,1) 33%, rgba(243,220,222,1) 72%);
 }
 
 .post-6 {
     grid-area: p6;
+    background: rgb(97,188,255);
+    background: linear-gradient(90deg, rgba(97,188,255,1) 15%, rgba(226,240,249,1) 99%);
 }
 
 @media (min-width: 768px) {
@@ -63,7 +127,13 @@
             "p4 p5 p2 p3"
             "p4 p5 p6 p6"
     }
+    .card {
+        height: 180px;
+        &__title {
+            max-width: 50%;
+        }
+    }
     .card--overlay--wide {
-        display: flex;
+        height: 130px;
     }
 }
