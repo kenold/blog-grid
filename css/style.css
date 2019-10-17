@@ -70,30 +70,42 @@ img {
   grid-area: p1;
   background: #6faaa7;
   background: linear-gradient(90deg, #6faaa7 33%, #d6e3e3 72%); }
+  .post-1 .btn {
+    color: #6faaa7; }
 
 .post-2 {
   grid-area: p2;
   background-color: #172532; }
+  .post-2 .btn {
+    color: #172532; }
 
 .post-3 {
   grid-area: p3;
   background: #bf9779;
   background: linear-gradient(180deg, #bf9779 33%, #ebd0b9 72%); }
+  .post-3 .btn {
+    color: #bf9779; }
 
 .post-4 {
   grid-area: p4;
   background: #66bbd2;
   background: linear-gradient(180deg, #66bbd2 33%, #bcdeea 72%); }
+  .post-4 .btn {
+    color: #66bbd2; }
 
 .post-5 {
   grid-area: p5;
   background: #fcbabe;
   background: linear-gradient(180deg, #fcbabe 33%, #f3dcde 72%); }
+  .post-5 .btn {
+    color: #f19399; }
 
 .post-6 {
   grid-area: p6;
   background: #61bcff;
   background: linear-gradient(90deg, #61bcff 15%, #e2f0f9 99%); }
+  .post-6 .btn {
+    color: #61bcff; }
 
 @media (min-width: 768px) {
   .cards {

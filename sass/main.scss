@@ -87,35 +87,53 @@ img {
     grid-area: p1;
     background: rgb(111,170,167);
     background: linear-gradient(90deg, rgba(111,170,167,1) 33%, rgba(214,227,227,1) 72%);
+    .btn {
+        color: rgba(111,170,167, 1);
+    }
 }
 
 .post-2 {
     grid-area: p2;
     background-color: #172532;
+    .btn {
+        color: #172532;
+    }
 }
 
 .post-3 {
     grid-area: p3;
     background: rgb(191,151,121);
     background: linear-gradient(180deg, rgba(191,151,121,1) 33%, rgba(235,208,185,1) 72%);
+    .btn {
+        color: rgba(191,151,121, 1);
+    }
 }
 
 .post-4 {
     grid-area: p4;
     background: rgb(102,187,210);
     background: linear-gradient(180deg, rgba(102,187,210,1) 33%, rgba(188,222,234,1) 72%);
+    .btn {
+        color: rgba(102,187,210, 1);
+    }
 }
 
 .post-5 {
     grid-area: p5;
     background: rgb(252,186,190);
     background: linear-gradient(180deg, rgba(252,186,190,1) 33%, rgba(243,220,222,1) 72%);
+    .btn {
+        color: rgb(241, 147, 153);
+    }
 }
 
 .post-6 {
     grid-area: p6;
     background: rgb(97,188,255);
     background: linear-gradient(90deg, rgba(97,188,255,1) 15%, rgba(226,240,249,1) 99%);
+    .btn {
+        color: rgba(97,188,255, 1);
+    }
 }
 
 @media (min-width: 768px) {
