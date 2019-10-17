@@ -44,7 +44,8 @@ img {
   .card__title {
     font-size: 1.5rem;
     padding-top: .75rem;
-    line-height: 28px; }
+    line-height: 28px;
+    max-width: 90%; }
   .card__topic {
     font-size: .875rem;
     color: #eee;
@@ -105,6 +106,4 @@ img {
     .card__title {
       max-width: 50%; }
   .card--overlay--wide {
-    height: 130px; }
-    .card--overlay--wide .card__title {
-      max-width: 70%; } }
+    height: 130px; } }
