@@ -1,9 +1,48 @@
 .wrapper {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 2rem; }
+
+.cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "p1 p1" "p2 p3" "p4 p5" "p6 p6"; }
 
 .card {
   color: #fff;
   background-color: #6FABA7;
   padding: 2rem; }
+  .card__image {
+    order: 2; }
+    .card__image img {
+      max-width: 100px; }
+  .card__content {
+    order: 1; }
+
+.post-1 {
+  grid-area: p1; }
+
+.post-2 {
+  grid-area: p2; }
+
+.post-3 {
+  grid-area: p3; }
+
+.post-4 {
+  grid-area: p4; }
+
+.post-5 {
+  grid-area: p5; }
+
+.post-6 {
+  grid-area: p6; }
+
+@media (min-width: 768px) {
+  .cards {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2rem 1fr;
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p2 p3" "p4 p5 p6 p6"; }
+  .card--overlay--wide {
+    display: flex; } }
